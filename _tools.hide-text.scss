@@ -1,0 +1,5 @@
+@mixin mn-hide-text {
+  text-indent: 101%; // at just 100% I get stray tick in the logo
+  white-space: nowrap;
+  overflow: hidden;
+}

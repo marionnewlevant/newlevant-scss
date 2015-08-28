@@ -1,0 +1,13 @@
+{
+  "name": "newlevant-scss",
+  "authors": [
+    "Marion Newlevant <marion.newlevant@gmail.com>"
+  ],
+  "description": "Reusable scss",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marionnewlevant/newlevant-scss.git"
+  }
+  "private": true
+}

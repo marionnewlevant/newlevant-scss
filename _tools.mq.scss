@@ -1,0 +1,20 @@
+$fix-mqs: false !default;
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  // If $mq-breakpoint is a key that exists in
+  // $mq-breakpoints, get and use the value
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+
+  @if $fix-mqs {
+    @if $fix-mqs >= #{$mq-breakpoint} {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: #{$mq-breakpoint}) {
+      @content;
+    }
+  }
+}
