@@ -8,6 +8,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/marionnewlevant/newlevant-scss.git"
-  }
+  },
   "private": true
 }
